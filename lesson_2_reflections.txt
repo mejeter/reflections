@@ -9,18 +9,25 @@ it?
 How is the staging area different from the working directory and the 
 repository? What value do you think it offers?
 
-	The staging area is a temporary holding area for the changes 
-	you want to commit to the repository.
+	The staging area is a temporary holding area for the changes to 
+	be committed to the repository. The working directory will contain 
+	current unsaved changes, and the repository houses all related commits.
 
 How can you use the staging area to make sure you have one commit per 
 logical change?
 
-	
+	You can use git diff with no arguments to compare the working 
+	directory with the staging area. This will show what changes were 
+	made and allow you to see at a glance whether all of the changes 
+	make sense to be committed together. You can also use git diff --
+	staged to compare the staging area to the most recent commit.
 
 What are some situations when branches would be helpful in keeping 
 your history organized? How would branches help?
 
-	
+	If you want to experiment with different versions of your program 
+	without commiting changes to the master, you can create different 
+	branches, which you can decide to merge later or keep separate. 
 
 How do the diagrams help you visualize the branch structure?
 
