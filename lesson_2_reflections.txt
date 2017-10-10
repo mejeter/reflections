@@ -11,7 +11,8 @@ repository? What value do you think it offers?
 
 	The staging area is a temporary holding area for the changes to 
 	be committed to the repository. The working directory will contain 
-	current unsaved changes, and the repository houses all related commits.
+	current unsaved changes, and the repository houses all related 
+	commits.
 
 How can you use the staging area to make sure you have one commit per 
 logical change?
@@ -31,14 +32,25 @@ your history organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
-
+	It shows the point at which the master branch splits off into 
+	other branches. This tells you which commits belong to which 
+	branch.
 
 What is the result of merging two branches together? Why do we 
 represent it in the diagram the way we do?
 
-
+	Merged branches combine the commits made in two branches into 
+	the master, so that the different branches no longer need to be 
+	checked out in order to look at the changes made in each. The 
+	diagram reflects this visually, which makes the concept easy to 
+	understand.
 
 What are the pros and cons of Git's automatic merging vs. always doing 
 merges manually?
 
-	
+	Automatic merging is faster and more convenient when there are no 
+	conflicts that will arise by using this shortcut. The benefit of 
+	using the manual merge is when automatic merging is not possible 
+	as a result of conflicts in the commits. These conflicts must be 
+	resolved manually because we do not want Git to make this decision 
+	for us, as it may not make the right one.
